@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define N 12
+#define N 6
 
 float seq_inner_product (float* vec1, float* vec2) {
     float sum = 0;

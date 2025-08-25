@@ -46,7 +46,10 @@ void* conc_inner_product (void* arg) {
    
     float* ret = (float*) malloc(sizeof(float));
     if (ret != NULL) *ret = sum_thread;
-    else {exit("ERROR: retorno nulo\n");}
+    else {
+        printf("ERROR: retorno nulo\n"); 
+        exit(1);
+    }
 
     pthread_exit((void*) ret);
 }
