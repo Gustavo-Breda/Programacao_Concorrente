@@ -153,7 +153,7 @@ int main (int argc, char* argv[])
     }
     N = atoi(argv[1]);
     M = atoi(argv[2]);
-    C = atoi(argv[3]);
+    if (argv[3]) C = atoi(argv[3]);
 
     buffer = (int*) malloc(sizeof(int) * M);
     if (buffer == NULL)
